@@ -15,7 +15,7 @@ const generateContacts = async (number) => {
     contacts.push(...updatedContacts);
     await fs.writeFile(PATH_DB, JSON.stringify(contacts, null, 2));
   } catch (err) {
-    console.log(err, 'Something went wrong');
+    console.log(err, 'Problem by generating contacts');
   }
 };
 
